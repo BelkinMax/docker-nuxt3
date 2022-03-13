@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs",
+    "build:docker": "docker build -t nuxt3 .",
+    "run:docker": "docker run -it --rm -p 3000:3000 nuxt3",
+    "start:docker": "npm run build:docker && npm run run:docker"
+  },
+  "devDependencies": {
+    "nuxt3": "latest"
+  }
+}
