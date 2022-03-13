@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Hello world latest</h1>
+    <h1>Are you alive?</h1>
   </section>
 </template>
 
