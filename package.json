@@ -5,7 +5,7 @@
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
     "build:docker": "docker build -t nuxt3 .",
-    "run:docker": "docker run -it --rm -p 3000:3000 nuxt3",
+    "run:docker": "docker run -p 3000:3000 -it --name nuxt3-app --rm nuxt3",
     "start:docker": "npm run build:docker && npm run run:docker"
   },
   "devDependencies": {

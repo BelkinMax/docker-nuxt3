@@ -3,10 +3,10 @@ FROM node:17
 RUN mkdir -p /usr/src/nuxt-app
 WORKDIR /usr/src/nuxt-app
 
-COPY package.json /usr/src/nuxt-app/
+COPY package.json .
 RUN npm install
 
-COPY . /usr/src/nuxt-app/
+COPY . .
 RUN npm run build
 
 EXPOSE 3000
